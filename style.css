@@ -1,0 +1,177 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+img {
+    max-height: 100vh;
+    width: auto;
+}
+
+
+body {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.header {
+    z-index: 10;
+}
+
+.text-light-grey {
+    color: rgb(179, 179, 179);
+}
+
+.text-light-grey:hover {
+    color: white;
+}
+
+.row {
+    --bs-gutter-x: none;
+}
+
+.account {
+    padding-top: 4px;
+}
+
+button, .navbar-toggler, .navbar-toggler-icon {
+    z-index: 999;
+}
+
+.line {
+    background: rgb(0,81,92);
+    width: 70px;
+    height: 3px;
+    margin: 0 80px;
+    margin-top: 48px;
+}
+
+.line1 {
+    background: rgb(255, 255, 255);
+    width: 200px;
+    height: 7px;
+    margin: 0 auto;
+}
+
+.line2 {
+    background: rgb(0, 81, 92);
+    width: 100px;
+    height: 7px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(0,81,92);
+    margin-right: 15px;
+}
+    
+.line3 {
+    background: rgb(173, 173, 173);
+    width: 150px;
+    height: 3px;
+    margin-top: 5px;
+}
+
+.circle-line {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.full-screen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+}
+.full-screen-menu .nav-link {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+.full-screen-menu .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+textarea{
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+section, header:nth-child(2) {
+    transition: 1s;
+}
+
+.collapsible {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.collapsible-btn {
+    width: 100%;
+    background: #f1f1f1;
+    border: none;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+
+.content {
+    display: none;
+    padding: 0 10px;
+    border-top: 1px solid #ccc;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.buy {
+    color: blue;
+    cursor: pointer;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 992px){
+    .text {
+        text-align: center;
+    }
+
+    .line2 {
+        margin: 0 auto;
+    }
+}
